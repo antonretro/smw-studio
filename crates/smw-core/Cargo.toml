@@ -1,0 +1,15 @@
+[package]
+name = "smw-core"
+version = "0.1.0"
+edition = "2021"
+description = "SMW Studio core: ROM loading, SMW emulation-based level loading, rendering"
+license = "MIT"
+
+[dependencies]
+wdc65816 = { path = "../wdc65816" }
+sha1_smol = "1"
+png = "0.17"
+serde = { version = "1", features = ["derive"] }
+serde_json = "1"
+zip = { version = "2", default-features = false, features = ["deflate"] }
+midly = "0.5"

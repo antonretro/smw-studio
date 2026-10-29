@@ -1,0 +1,14 @@
+[package]
+name = "smw-play"
+version = "0.1.0"
+edition = "2024"
+description = "Plays a SNES ROM inside SMW Studio through a libretro core (Snes9x)"
+
+[dependencies]
+libloading = "0.8"
+cpal = "0.15"
+
+[dev-dependencies]
+zip = { version = "2", default-features = false, features = ["deflate"] }
+smw-core = { path = "../smw-core" }
+png = "0.17"

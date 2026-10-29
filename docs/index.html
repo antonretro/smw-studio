@@ -1,0 +1,189 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>SMW Studio</title>
+<meta name="description" content="SMW Studio: one modern app for making Super Mario World hacks. Build levels, play them instantly, add music and patches.">
+<link rel="icon" type="image/svg+xml" href="logo.svg">
+<style>
+  :root { --bg: #0c1833; --bg2: #11234a; --card: #152b57; --line: #24407a; --text: #f4f0e7; --muted: #a9b5cf; --gold: #f7b51c; --red: #e5463b; --green: #34c759; }
+  * { box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
+  body { margin: 0; font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif; background: var(--bg); color: var(--text); line-height: 1.6; }
+  a { color: var(--gold); }
+  .wrap { max-width: 1080px; margin: 0 auto; padding: 0 16px; }
+  nav { position: sticky; top: 0; z-index: 5; background: rgba(12, 24, 51, 0.85); backdrop-filter: blur(8px); border-bottom: 1px solid var(--line); }
+  nav .wrap { display: flex; align-items: center; gap: 22px; height: 58px; }
+  nav .brand { display: flex; align-items: center; gap: 10px; font-weight: 800; color: var(--text); text-decoration: none; }
+  nav .brand img { width: 28px; height: 28px; }
+  nav .links { margin-left: auto; display: flex; gap: 18px; }
+  nav .links a { color: var(--muted); text-decoration: none; font-size: 0.95rem; }
+  nav .links a:hover { color: var(--text); }
+  .hero { padding: 84px 0 64px; background: radial-gradient(900px 420px at 50% -10%, #1d3a78 0%, transparent 70%); text-align: center; }
+  .hero img { display: block; margin: 0 auto; width: 120px; height: 120px; filter: drop-shadow(0 18px 30px rgba(0, 0, 0, 0.45)); }
+  .hero .badge { display: table; margin-left: auto; margin-right: auto; }
+  .badge { display: inline-block; margin: 18px 0 8px; font-size: 0.8rem; font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase; background: rgba(247, 181, 28, 0.15); color: var(--gold); border: 1px solid rgba(247, 181, 28, 0.45); border-radius: 999px; padding: 4px 12px; }
+  h1 { font-size: clamp(2.2rem, 6vw, 3.8rem); line-height: 1.1; margin: 8px 0 14px; letter-spacing: -0.02em; }
+  h1 span { color: var(--gold); }
+  .lead { font-size: clamp(1.05rem, 2.4vw, 1.3rem); color: var(--muted); max-width: 680px; margin: 0 auto 30px; }
+  .cta a { display: inline-block; margin: 6px; padding: 13px 24px; border-radius: 10px; text-decoration: none; font-weight: 700; }
+  .cta .primary { background: var(--red); color: #fff; box-shadow: 0 8px 22px rgba(229, 70, 59, 0.35); }
+  .cta .ghost { border: 1px solid var(--line); color: var(--text); background: var(--bg2); }
+  .small { color: var(--muted); font-size: 0.9rem; margin-top: 14px; }
+  section { padding: 64px 0; }
+  section.alt { background: var(--bg2); }
+  h2 { font-size: clamp(1.6rem, 4vw, 2.3rem); margin: 0 0 10px; letter-spacing: -0.01em; }
+  .sub { color: var(--muted); margin: 0 0 32px; max-width: 680px; }
+  .grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); gap: 16px; }
+  .card { background: var(--card); border: 1px solid var(--line); border-radius: 14px; padding: 22px; }
+  .card .ico { width: 40px; height: 40px; border-radius: 10px; display: grid; place-items: center; font-size: 1.3rem; margin-bottom: 12px; background: rgba(255, 255, 255, 0.06); }
+  .card h3 { margin: 0 0 6px; font-size: 1.1rem; }
+  .card p { margin: 0; color: var(--muted); font-size: 0.97rem; }
+  table { width: 100%; border-collapse: collapse; background: var(--card); border-radius: 14px; overflow: hidden; }
+  th, td { text-align: left; padding: 12px 16px; border-bottom: 1px solid var(--line); font-size: 0.97rem; }
+  th { color: var(--muted); font-weight: 600; }
+  td.yes { color: var(--green); font-weight: 700; }
+  td.no { color: var(--muted); }
+  .tablewrap { overflow-x: auto; }
+  .news { background: var(--card); border: 1px solid var(--line); border-radius: 14px; padding: 22px 26px; }
+  .news h3 { margin: 0 0 8px; }
+  .news ul, .road ul { margin: 0; padding-left: 20px; }
+  .news li, .road li { margin: 6px 0; }
+  .road { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 16px; }
+  .road .card h3 { margin-bottom: 10px; }
+  .faq details { background: var(--card); border: 1px solid var(--line); border-radius: 12px; padding: 14px 18px; margin-bottom: 10px; }
+  .faq summary { cursor: pointer; font-weight: 600; }
+  .faq p { color: var(--muted); margin: 10px 0 0; }
+  footer { padding: 36px 0 48px; color: var(--muted); font-size: 0.9rem; border-top: 1px solid var(--line); }
+  @media (max-width: 640px) { nav .links { display: none; } .hero { padding-top: 56px; } }
+</style>
+</head>
+<body>
+<nav>
+  <div class="wrap">
+    <a class="brand" href="#"><img src="logo.svg" alt="">SMW Studio</a>
+    <div class="links">
+      <a href="#features">Features</a>
+      <a href="#new">What's new</a>
+      <a href="#roadmap">Roadmap</a>
+      <a href="#faq">FAQ</a>
+      <a href="https://github.com/antonretro/smw-studio">GitHub</a>
+    </div>
+  </div>
+</nav>
+
+<header class="hero">
+  <div class="wrap">
+    <img src="logo.svg" alt="SMW Studio logo">
+    <div class="badge">Alpha · free and open source</div>
+    <h1>Make Super Mario World hacks<br><span>in one app.</span></h1>
+    <p class="lead">Build levels, play them instantly, add music, patches and a custom status bar, without juggling a dozen tools, forum threads and command lines.</p>
+    <div class="cta">
+      <a class="primary" href="https://github.com/antonretro/smw-studio/releases">Download for Windows</a>
+      <a class="ghost" href="guide/01-getting-started.md">Read the guide</a>
+    </div>
+    <p class="small">Needs your own copy of Super Mario World (USA). Works with clean ROMs, Lunar Magic hacks and SA-1 hacks.</p>
+  </div>
+</header>
+
+<section id="features">
+  <div class="wrap">
+    <h2>Everything in one place</h2>
+    <p class="sub">SMW Studio runs the game's own code to draw and play your levels, so what you see is what the game does.</p>
+    <div class="grid">
+      <div class="card"><div class="ico">🧱</div><h3>Level editor</h3><p>Place, move, copy and erase objects and sprites from palettes the game draws itself. Undo everything.</p></div>
+      <div class="card"><div class="ico">▶️</div><h3>Play instantly</h3><p>Jump straight into any level from the editor, with test cheats: invincible, infinite time, any power-up, start at the midway.</p></div>
+      <div class="card"><div class="ico">⚡</div><h3>SA-1 hacks</h3><p>Big SA-1 hacks open, draw, edit, save and play from the inside, with SA-1 emulated in the editor.</p></div>
+      <div class="card"><div class="ico">🎵</div><h3>Music</h3><p>Turn MIDI files into songs, insert them with AddmusicK, and see which songs in any hack are original or custom, then play any of them.</p></div>
+      <div class="card"><div class="ico">🧩</div><h3>Patches as switches</h3><p>Add community patches (like a ground pound or wall jump) and switch them on or off. Off puts every byte back; patches that would break a hack are refused.</p></div>
+      <div class="card"><div class="ico">🖼️</div><h3>Status bar designer</h3><p>Presets, drag-in counters and icons, moving counters, sprites anywhere on the bar. Works on a real SNES.</p></div>
+      <div class="card"><div class="ico">📦</div><h3>Toolbox</h3><p>Import packs from SMW Central once and use them in any hack, and take levels and songs from other hacks.</p></div>
+      <div class="card"><div class="ico">🗺️</div><h3>Overworld</h3><p>See every map exactly as the game draws it, with all paths and events shown.</p></div>
+      <div class="card"><div class="ico">📘</div><h3>Learn as you go</h3><p>A first-run tour, built-in tutorials and plain-language messages, not hex and guesswork.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="alt">
+  <div class="wrap">
+    <h2>One app instead of a toolchain</h2>
+    <p class="sub">Hacking SMW usually means many separate programs. SMW Studio is building them into one place.</p>
+    <div class="tablewrap">
+      <table>
+        <tr><th>Task</th><th>Usually</th><th>SMW Studio</th></tr>
+        <tr><td>Edit levels</td><td class="no">Level editor</td><td class="yes">Built in</td></tr>
+        <tr><td>Test a level</td><td class="no">Save, open an emulator, walk there</td><td class="yes">One click</td></tr>
+        <tr><td>Insert music</td><td class="no">AddmusicK by hand</td><td class="yes">Built in</td></tr>
+        <tr><td>Apply and remove patches</td><td class="no">Asar on the command line; no undo</td><td class="yes">Switches, with undo</td></tr>
+        <tr><td>Per-frame code</td><td class="no">UberASM Tool</td><td class="yes">Built in</td></tr>
+        <tr><td>Status bar</td><td class="no">Separate editor or patches</td><td class="yes">Built in</td></tr>
+        <tr><td>Custom sprites and blocks</td><td class="no">PIXI, GPS</td><td class="no">Coming</td></tr>
+      </table>
+    </div>
+  </div>
+</section>
+
+<section id="new">
+  <div class="wrap">
+    <h2>What's new</h2>
+    <div class="news">
+      <h3>0.1 Alpha: first public version</h3>
+      <ul>
+        <li>Level editing with game-accurate drawing, including Lunar Magic and SA-1 hacks.</li>
+        <li>Play from the editor, with test cheats.</li>
+        <li>Music import from MIDI, song pool, original vs custom song detection, play any song.</li>
+        <li>Patches and per-frame code as switches, with exact undo and safety checks.</li>
+        <li>Status bar designer with presets, drag-in pieces and sprites.</li>
+        <li>Overworld view, level names from the ROM, docs and tutorials.</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section id="roadmap" class="alt">
+  <div class="wrap">
+    <h2>Roadmap</h2>
+    <p class="sub">This is an alpha. Here's what comes next.</p>
+    <div class="road">
+      <div class="card"><h3>Before 1.0</h3><ul>
+        <li>Overworld editing</li><li>Map16 block editor</li><li>Graphics and palette editing</li>
+        <li>Custom sprites and blocks built in</li><li>Toolbox blocks in the object list</li><li>Share hacks as BPS patches</li><li>Update checks</li>
+      </ul></div>
+      <div class="card"><h3>After 1.0</h3><ul>
+        <li>New game from an empty slate</li><li>Faster engine rewrites, proved identical</li><li>Scenes and cutscenes</li>
+        <li>Effects: Mode 7 and HDMA</li><li>.smws project files</li><li>Translations, Mac and Linux</li>
+      </ul></div>
+    </div>
+  </div>
+</section>
+
+<section id="faq">
+  <div class="wrap faq">
+    <h2>FAQ</h2>
+    <details><summary>Is it legal?</summary><p>SMW Studio contains no Nintendo game data. It reads your own copy of the game, like other SMW tools. Share your hacks as patches, never as ROMs.</p></details>
+    <details><summary>Does it work with my Lunar Magic hack?</summary><p>Yes: it opens Lunar Magic hacks and SA-1 hacks. It makes backups before big changes, but keep your own backups too: this is an alpha.</p></details>
+    <details><summary>Does it replace Lunar Magic?</summary><p>Not yet. The overworld editor, block editor and graphics tools are still to come. Lunar Magic is still recommended for those parts.</p></details>
+    <details><summary>Is it free?</summary><p>Yes, free and open source (MIT).</p></details>
+  </div>
+</section>
+
+<section class="alt">
+  <div class="wrap">
+    <h2>Resources</h2>
+    <ul>
+      <li><a href="https://www.smwcentral.net/">SMW Central</a>: hacks, graphics, music, patches, tools and the community.</li>
+      <li><a href="https://www.smwcentral.net/?p=section&amp;s=smwmusic">Music</a>, <a href="https://www.smwcentral.net/?p=section&amp;s=smwpatches">patches</a> and <a href="https://www.smwcentral.net/?p=section&amp;s=smwgraphics">graphics</a> on SMW Central.</li>
+      <li><a href="https://fusoya.eludevisibility.org/lm/">Lunar Magic</a> by FuSoYa, the classic SMW editor.</li>
+    </ul>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    SMW Studio · free and open source (MIT) · <a href="https://github.com/antonretro/smw-studio">GitHub</a><br>
+    Contains no Nintendo game data; you need your own copy of Super Mario World. Super Mario World is a trademark of Nintendo. Not affiliated with Nintendo.
+  </div>
+</footer>
+</body>
+</html>

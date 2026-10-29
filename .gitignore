@@ -1,0 +1,22 @@
+# Local reference files stay out of git
+reference/
+
+# ROMs - never commit
+*.sfc
+*.smc
+*.bps
+*.ips
+
+# Build output
+target/
+node_modules/
+dist/
+*.log
+
+# Local tool settings
+.claude/
+
+# Third-party tools fetched for development (licences to check before shipping)
+vendor/addmusick/
+vendor/addmusick-dl/
+tools/ghidra/

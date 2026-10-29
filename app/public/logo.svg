@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+  <title>SMW Studio</title>
+  <defs>
+    <linearGradient id="g" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#ffc83d"/><stop offset="1" stop-color="#f29d0a"/></linearGradient>
+    <linearGradient id="r" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#f45a4a"/><stop offset="1" stop-color="#d92e24"/></linearGradient>
+    <linearGradient id="w" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#fbf8f1"/><stop offset="1" stop-color="#ece6d8"/></linearGradient>
+  </defs>
+  <rect x="16" y="16" width="480" height="480" rx="96" fill="#13295a"/>
+  <rect x="60" y="60" width="186" height="186" rx="52" fill="url(#w)"/>
+  <rect x="266" y="60" width="186" height="186" rx="52" fill="url(#g)"/>
+  <rect x="60" y="266" width="186" height="186" rx="52" fill="url(#r)"/>
+  <rect x="266" y="266" width="186" height="186" rx="52" fill="url(#w)"/>
+  <!-- Pixel sparkle on the gold tile -->
+  <g fill="#fbf8f1">
+    <rect x="356" y="104" width="20" height="20"/>
+    <rect x="336" y="124" width="20" height="20"/>
+    <rect x="376" y="124" width="20" height="20"/>
+    <rect x="356" y="144" width="20" height="20"/>
+  </g>
+  <!-- Play triangle -->
+  <path d="M322 316 L322 402 Q322 414 333 408 L404 366 Q414 359 404 352 L333 310 Q322 304 322 316 Z" fill="#13295a"/>
+</svg>

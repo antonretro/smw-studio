@@ -1,0 +1,803 @@
+{
+  "source": "SMW Studio object names (Nintendo's names for the game's objects)",
+  "standard": {
+    "00": {
+      "name": "Internal Extended Object Code",
+      "desc": "Internal Extended Object Code."
+    },
+    "01": {
+      "name": "Dark blue water tile",
+      "desc": "Dark blue water tile."
+    },
+    "02": {
+      "name": "Invisible coin block",
+      "desc": "Invisible coin block."
+    },
+    "03": {
+      "name": "Invisible jumping note block",
+      "desc": "Invisible jumping note block."
+    },
+    "04": {
+      "name": "Invisible coin",
+      "desc": "Invisible coin."
+    },
+    "05": {
+      "name": "Ordinary coin",
+      "desc": "Ordinary coin."
+    },
+    "06": {
+      "name": "Dirt tile",
+      "desc": "Dirt tile."
+    },
+    "07": {
+      "name": "Water tile",
+      "desc": "Water tile."
+    },
+    "08": {
+      "name": "Jumping note block",
+      "desc": "Jumping note block."
+    },
+    "09": {
+      "name": "Turn block",
+      "desc": "Turn block."
+    },
+    "0A": {
+      "name": "Question block with a coin inside",
+      "desc": "Question block with a coin inside."
+    },
+    "0B": {
+      "name": "Throw block",
+      "desc": "Throw block."
+    },
+    "0C": {
+      "name": "Black piranha plant",
+      "desc": "Black piranha plant."
+    },
+    "0D": {
+      "name": "Grey cement block",
+      "desc": "Grey cement block."
+    },
+    "0E": {
+      "name": "Brown block",
+      "desc": "Brown block."
+    },
+    "0F": {
+      "name": "Vertical pipe object",
+      "desc": "Vertical pipe object."
+    },
+    "10": {
+      "name": "Horizontal pipe object",
+      "desc": "Horizontal pipe object."
+    },
+    "11": {
+      "name": "Bullet machine",
+      "desc": "Bullet machine."
+    },
+    "12": {
+      "name": "Slope object",
+      "desc": "Slope object."
+    },
+    "13": {
+      "name": "Ledge edge/vine object",
+      "desc": "Ledge edge/vine object."
+    },
+    "14": {
+      "name": "Standard type of ledge",
+      "desc": "Standard type of ledge."
+    },
+    "15": {
+      "name": "Midway/goal point object",
+      "desc": "Midway/goal point object."
+    },
+    "16": {
+      "name": "Purple coin",
+      "desc": "Purple coin."
+    },
+    "17": {
+      "name": "Rope/cloud object",
+      "desc": "Rope/cloud object."
+    },
+    "18": {
+      "name": "Water with an animated surface",
+      "desc": "Water with an animated surface."
+    },
+    "19": {
+      "name": "Water with a non-animated surface",
+      "desc": "Water with a non-animated surface."
+    },
+    "1A": {
+      "name": "Mud/lava with an animated surface",
+      "desc": "Mud/lava with an animated surface."
+    },
+    "1B": {
+      "name": "Climbing net object with an edge on the top",
+      "desc": "Climbing net object with an edge on the top."
+    },
+    "1C": {
+      "name": "Donut bridge",
+      "desc": "Donut bridge."
+    },
+    "1D": {
+      "name": "Climbing net object with an edge on the bottom",
+      "desc": "Climbing net object with an edge on the bottom."
+    },
+    "1E": {
+      "name": "Climbing net object with a left/right edge",
+      "desc": "Climbing net object with a left/right edge."
+    },
+    "1F": {
+      "name": "Skinny vertical pipe/bone/log object",
+      "desc": "Skinny vertical pipe/bone/log object."
+    },
+    "20": {
+      "name": "Skinny horizontal pipe/bone/log object",
+      "desc": "Skinny horizontal pipe/bone/log object."
+    },
+    "21": {
+      "name": "Wide-scale ground ledge object",
+      "desc": "Wide-scale ground ledge object."
+    },
+    "22": {
+      "name": "Internal Direct Map16 Access Code 0",
+      "desc": "Internal Direct Map16 Access Code 0."
+    },
+    "23": {
+      "name": "Internal Direct Map16 Access Code 1",
+      "desc": "Internal Direct Map16 Access Code 1."
+    },
+    "24": {
+      "name": "Internal ExGFX Code",
+      "desc": "Internal ExGFX Code."
+    },
+    "25": {
+      "name": "Internal Animated Tile Extension Code",
+      "desc": "Internal Animated Tile Extension Code."
+    },
+    "26": {
+      "name": "Internal Music Bypass Code",
+      "desc": "Internal Music Bypass Code."
+    },
+    "27": {
+      "name": "Internal Direct Map16 Access Code X",
+      "desc": "Internal Direct Map16 Access Code X."
+    },
+    "28": {
+      "name": "Internal Time Limit Bypass Code",
+      "desc": "Internal Time Limit Bypass Code."
+    },
+    "29": {
+      "name": "Internal Direct Map16 Access Code X2",
+      "desc": "Internal Direct Map16 Access Code X2."
+    },
+    "2A": {
+      "name": "Reserved for future use by Lunar Magic",
+      "desc": "Reserved for future use by Lunar Magic."
+    },
+    "2B": {
+      "name": "Reserved for future use by Lunar Magic",
+      "desc": "Reserved for future use by Lunar Magic."
+    },
+    "2C": {
+      "name": "Reserved for future use by Lunar Magic",
+      "desc": "Reserved for future use by Lunar Magic."
+    },
+    "2D": {
+      "name": "Reserved for 5-byte user defined objects",
+      "desc": "Reserved for 5-byte user defined objects."
+    },
+    "2E": {
+      "name": "Null or unused object",
+      "desc": "Null or unused object."
+    },
+    "2F": {
+      "name": "Null or unused object",
+      "desc": "Null or unused object."
+    }
+  },
+  "extended": {
+    "00": {
+      "name": "Internal Screen Exit Code",
+      "desc": "Internal Screen Exit Code."
+    },
+    "01": {
+      "name": "Internal Screen Jump Code",
+      "desc": "Internal Screen Jump Code."
+    },
+    "02": {
+      "name": "Internal Screen Exit Code 2",
+      "desc": "Internal Screen Exit Code 2."
+    },
+    "03": {
+      "name": "Internal Screen Jump Code 2",
+      "desc": "Internal Screen Jump Code 2."
+    },
+    "04": {
+      "name": "Null or unused object",
+      "desc": "Null or unused object."
+    },
+    "05": {
+      "name": "Null or unused object",
+      "desc": "Null or unused object."
+    },
+    "06": {
+      "name": "Null or unused object",
+      "desc": "Null or unused object."
+    },
+    "07": {
+      "name": "Null or unused object",
+      "desc": "Null or unused object."
+    },
+    "08": {
+      "name": "Null or unused object",
+      "desc": "Null or unused object."
+    },
+    "09": {
+      "name": "Null or unused object",
+      "desc": "Null or unused object."
+    },
+    "0A": {
+      "name": "Null or unused object",
+      "desc": "Null or unused object."
+    },
+    "0B": {
+      "name": "Null or unused object",
+      "desc": "Null or unused object."
+    },
+    "0C": {
+      "name": "Null or unused object",
+      "desc": "Null or unused object."
+    },
+    "0D": {
+      "name": "Null or unused object",
+      "desc": "Null or unused object."
+    },
+    "0E": {
+      "name": "Null or unused object",
+      "desc": "Null or unused object."
+    },
+    "0F": {
+      "name": "Null or unused object",
+      "desc": "Null or unused object."
+    },
+    "10": {
+      "name": "Small door",
+      "desc": "Small door."
+    },
+    "11": {
+      "name": "Invisible 1-UP question block",
+      "desc": "Invisible 1-UP question block."
+    },
+    "13": {
+      "name": "Top left corner edge tile",
+      "desc": "Top left corner edge tile."
+    },
+    "14": {
+      "name": "Top right corner edge tile",
+      "desc": "Top right corner edge tile."
+    },
+    "15": {
+      "name": "Small invisible door",
+      "desc": "Small invisible door."
+    },
+    "16": {
+      "name": "Invisible question block with a coin inside,",
+      "desc": "Invisible question block with a coin inside,."
+    },
+    "17": {
+      "name": "Green star block with a 1-UP inside",
+      "desc": "Green star block with a 1-UP inside."
+    },
+    "18": {
+      "name": "Moon that will give Mario 3 extra lives",
+      "desc": "Moon that will give Mario 3 extra lives."
+    },
+    "19": {
+      "name": "Invisible 1-UP point #1",
+      "desc": "Invisible 1-UP point #1."
+    },
+    "1A": {
+      "name": "Invisible 1-UP point #2",
+      "desc": "Invisible 1-UP point #2."
+    },
+    "1B": {
+      "name": "Invisible 1-UP point #3",
+      "desc": "Invisible 1-UP point #3."
+    },
+    "1C": {
+      "name": "Invisible 1-UP point #4",
+      "desc": "Invisible 1-UP point #4."
+    },
+    "1D": {
+      "name": "Red berry",
+      "desc": "Red berry."
+    },
+    "1E": {
+      "name": "Pink berry",
+      "desc": "Pink berry."
+    },
+    "1F": {
+      "name": "Green berry",
+      "desc": "Green berry."
+    },
+    "20": {
+      "name": "Always-turning turn block",
+      "desc": "Always-turning turn block."
+    },
+    "21": {
+      "name": "Bottom right midway point tile (not used)",
+      "desc": "Bottom right midway point tile (not used)."
+    },
+    "22": {
+      "name": "Bottom right midway point tile (not used)",
+      "desc": "Bottom right midway point tile (not used)."
+    },
+    "23": {
+      "name": "Note block with a flower, feather, or star inside depending on its X position",
+      "desc": "Note block with a flower, feather, or star inside depending on its X position."
+    },
+    "24": {
+      "name": "On/off block",
+      "desc": "On/off block."
+    },
+    "25": {
+      "name": "Question block",
+      "desc": "Question block."
+    },
+    "26": {
+      "name": "Standard jumping note block",
+      "desc": "Standard jumping note block."
+    },
+    "27": {
+      "name": "Note block",
+      "desc": "Note block."
+    },
+    "28": {
+      "name": "Turn block with a flower inside",
+      "desc": "Turn block with a flower inside."
+    },
+    "29": {
+      "name": "Turn block with a feather inside",
+      "desc": "Turn block with a feather inside."
+    },
+    "2A": {
+      "name": "Turn block with a star inside",
+      "desc": "Turn block with a star inside."
+    },
+    "2B": {
+      "name": "Turn block with a star 2, 1-UP, or vine inside depending on its X position",
+      "desc": "Turn block with a star 2, 1-UP, or vine inside depending on its X position."
+    },
+    "2C": {
+      "name": "Turn block with multiple coins inside",
+      "desc": "Turn block with multiple coins inside."
+    },
+    "2D": {
+      "name": "Turn block with a coin inside",
+      "desc": "Turn block with a coin inside."
+    },
+    "2E": {
+      "name": "Turn block with \"nothing\" inside",
+      "desc": "Turn block with \"nothing\" inside."
+    },
+    "2F": {
+      "name": "Turn block with a blue or silver POW inside depending on its X position",
+      "desc": "Turn block with a blue or silver POW inside depending on its X position."
+    },
+    "30": {
+      "name": "Question block with a flower inside",
+      "desc": "Question block with a flower inside."
+    },
+    "31": {
+      "name": "Question block with a feather inside",
+      "desc": "Question block with a feather inside."
+    },
+    "32": {
+      "name": "Question block with a star inside",
+      "desc": "Question block with a star inside."
+    },
+    "33": {
+      "name": "Question block with a star 2 inside",
+      "desc": "Question block with a star 2 inside."
+    },
+    "34": {
+      "name": "Question block with multiple coins inside",
+      "desc": "Question block with multiple coins inside."
+    },
+    "35": {
+      "name": "Question block with a key, wings, balloon, or shell inside depending on its X position",
+      "desc": "Question block with a key, wings, balloon, or shell inside depending on its X position."
+    },
+    "36": {
+      "name": "Question block with Yoshi inside",
+      "desc": "Question block with Yoshi inside."
+    },
+    "37": {
+      "name": "Question block with green shell inside",
+      "desc": "Question block with green shell inside."
+    },
+    "38": {
+      "name": "Question block with green shell inside",
+      "desc": "Question block with green shell inside."
+    },
+    "39": {
+      "name": "Unbreakable turn block with a side feather inside",
+      "desc": "Unbreakable turn block with a side feather inside."
+    },
+    "3A": {
+      "name": "Top left corner edge tile 2",
+      "desc": "Top left corner edge tile 2."
+    },
+    "3B": {
+      "name": "Top right corner edge tile 2",
+      "desc": "Top right corner edge tile 2."
+    },
+    "3C": {
+      "name": "Top left corner edge tile 3",
+      "desc": "Top left corner edge tile 3."
+    },
+    "3D": {
+      "name": "Top right corner edge tile 3",
+      "desc": "Top right corner edge tile 3."
+    },
+    "3E": {
+      "name": "Top left corner edge tile 4",
+      "desc": "Top left corner edge tile 4."
+    },
+    "3F": {
+      "name": "Top right corner edge tile 4",
+      "desc": "Top right corner edge tile 4."
+    },
+    "40": {
+      "name": "Translucent block",
+      "desc": "Translucent block."
+    },
+    "41": {
+      "name": "Yoshi coin",
+      "desc": "Yoshi coin."
+    },
+    "42": {
+      "name": "Top left slope",
+      "desc": "Top left slope."
+    },
+    "43": {
+      "name": "Top right slope",
+      "desc": "Top right slope."
+    },
+    "44": {
+      "name": "Left facing purple triangle",
+      "desc": "Left facing purple triangle."
+    },
+    "45": {
+      "name": "Right facing purple triangle",
+      "desc": "Right facing purple triangle."
+    },
+    "46": {
+      "name": "Midway point tape",
+      "desc": "Midway point tape."
+    },
+    "47": {
+      "name": "Standard door",
+      "desc": "Standard door."
+    },
+    "48": {
+      "name": "Invisible door",
+      "desc": "Invisible door."
+    },
+    "49": {
+      "name": "Ghost house showing an exit",
+      "desc": "Ghost house showing an exit."
+    },
+    "4A": {
+      "name": "Climbing net door",
+      "desc": "Climbing net door."
+    },
+    "4B": {
+      "name": "Conveyor end tile 1",
+      "desc": "Conveyor end tile 1."
+    },
+    "4C": {
+      "name": "Conveyor end tile 2",
+      "desc": "Conveyor end tile 2."
+    },
+    "4D": {
+      "name": "Line guide, top left section of a large circle",
+      "desc": "Line guide, top left section of a large circle."
+    },
+    "4E": {
+      "name": "Line guide, top right section of a large circle",
+      "desc": "Line guide, top right section of a large circle."
+    },
+    "4F": {
+      "name": "Line guide, bottom left section of a large circle",
+      "desc": "Line guide, bottom left section of a large circle."
+    },
+    "50": {
+      "name": "Line guide, bottom right section of a large circle",
+      "desc": "Line guide, bottom right section of a large circle."
+    },
+    "51": {
+      "name": "Line guide, top left section of a small circle",
+      "desc": "Line guide, top left section of a small circle."
+    },
+    "52": {
+      "name": "Line guide, top right section of a small circle",
+      "desc": "Line guide, top right section of a small circle."
+    },
+    "53": {
+      "name": "Line guide, bottom left section of a small circle",
+      "desc": "Line guide, bottom left section of a small circle."
+    },
+    "54": {
+      "name": "Line guide, bottom right section of a small circle",
+      "desc": "Line guide, bottom right section of a small circle."
+    },
+    "55": {
+      "name": "Line guide end, for horizontal line",
+      "desc": "Line guide end, for horizontal line."
+    },
+    "56": {
+      "name": "Line guide end, for vertical line",
+      "desc": "Line guide end, for vertical line."
+    },
+    "57": {
+      "name": "Switch Palace bottom right corner tile",
+      "desc": "Switch Palace bottom right corner tile."
+    },
+    "58": {
+      "name": "Switch Palace bottom left corner tile",
+      "desc": "Switch Palace bottom left corner tile."
+    },
+    "59": {
+      "name": "Switch Palace top right corner tile",
+      "desc": "Switch Palace top right corner tile."
+    },
+    "5A": {
+      "name": "Switch Palace top left corner tile",
+      "desc": "Switch Palace top left corner tile."
+    },
+    "5B": {
+      "name": "Bit of brick background tile 1",
+      "desc": "Bit of brick background tile 1."
+    },
+    "5C": {
+      "name": "Bit of brick background tile 2",
+      "desc": "Bit of brick background tile 2."
+    },
+    "5D": {
+      "name": "Bit of brick background tile 3",
+      "desc": "Bit of brick background tile 3."
+    },
+    "5E": {
+      "name": "Bit of brick background tile 4",
+      "desc": "Bit of brick background tile 4."
+    },
+    "5F": {
+      "name": "Large background area, unknown use",
+      "desc": "Large background area, unknown use."
+    },
+    "60": {
+      "name": "Mud/lava steep top right corner edge",
+      "desc": "Mud/lava steep top right corner edge."
+    },
+    "61": {
+      "name": "Ghost house clock",
+      "desc": "Ghost house clock."
+    },
+    "62": {
+      "name": "Ghost house top left to bottom right beam 1",
+      "desc": "Ghost house top left to bottom right beam 1."
+    },
+    "63": {
+      "name": "Ghost house top right to bottom left beam 1",
+      "desc": "Ghost house top right to bottom left beam 1."
+    },
+    "64": {
+      "name": "Ghost house cobweb, top right",
+      "desc": "Ghost house cobweb, top right."
+    },
+    "65": {
+      "name": "Ghost house cobweb, top left",
+      "desc": "Ghost house cobweb, top left."
+    },
+    "66": {
+      "name": "Ghost house top right to bottom left beam 2",
+      "desc": "Ghost house top right to bottom left beam 2."
+    },
+    "67": {
+      "name": "Ghost house top left to bottom right beam 2",
+      "desc": "Ghost house top left to bottom right beam 2."
+    },
+    "68": {
+      "name": "Cloud fringe, bottom and right edge",
+      "desc": "Cloud fringe, bottom and right edge."
+    },
+    "69": {
+      "name": "Cloud fringe, bottom and left edge",
+      "desc": "Cloud fringe, bottom and left edge."
+    },
+    "6A": {
+      "name": "Cloud fringe, bottom right",
+      "desc": "Cloud fringe, bottom right."
+    },
+    "6B": {
+      "name": "Cloud fringe, bottom left",
+      "desc": "Cloud fringe, bottom left."
+    },
+    "6C": {
+      "name": "Cloud fringe on white, bottom and right edge",
+      "desc": "Cloud fringe on white, bottom and right edge."
+    },
+    "6D": {
+      "name": "Cloud fringe on white, bottom and left edge",
+      "desc": "Cloud fringe on white, bottom and left edge."
+    },
+    "6E": {
+      "name": "Cloud fringe on white, bottom right",
+      "desc": "Cloud fringe on white, bottom right."
+    },
+    "6F": {
+      "name": "Cloud fringe on white, bottom left",
+      "desc": "Cloud fringe on white, bottom left."
+    },
+    "70": {
+      "name": "Bit of canvas 1",
+      "desc": "Bit of canvas 1."
+    },
+    "71": {
+      "name": "Canvas 1",
+      "desc": "Canvas 1."
+    },
+    "72": {
+      "name": "Canvas 2",
+      "desc": "Canvas 2."
+    },
+    "73": {
+      "name": "Canvas 3",
+      "desc": "Canvas 3."
+    },
+    "74": {
+      "name": "Canvas 4",
+      "desc": "Canvas 4."
+    },
+    "75": {
+      "name": "Canvas tile 1",
+      "desc": "Canvas tile 1."
+    },
+    "76": {
+      "name": "Canvas tile 2",
+      "desc": "Canvas tile 2."
+    },
+    "77": {
+      "name": "Canvas tile 3",
+      "desc": "Canvas tile 3."
+    },
+    "78": {
+      "name": "Canvas tile 4",
+      "desc": "Canvas tile 4."
+    },
+    "79": {
+      "name": "Canvas tile 5",
+      "desc": "Canvas tile 5."
+    },
+    "7A": {
+      "name": "Canvas tile 6",
+      "desc": "Canvas tile 6."
+    },
+    "7B": {
+      "name": "Canvas tile 7",
+      "desc": "Canvas tile 7."
+    },
+    "7C": {
+      "name": "Bit of canvas 2",
+      "desc": "Bit of canvas 2."
+    },
+    "7D": {
+      "name": "Bit of canvas 3",
+      "desc": "Bit of canvas 3."
+    },
+    "7E": {
+      "name": "Bit of canvas 4",
+      "desc": "Bit of canvas 4."
+    },
+    "7F": {
+      "name": "Skull and crossbones torpedo launcher",
+      "desc": "Skull and crossbones torpedo launcher."
+    },
+    "80": {
+      "name": "Ghost house entrance",
+      "desc": "Ghost house entrance."
+    },
+    "81": {
+      "name": "Animated water weed",
+      "desc": "Animated water weed."
+    },
+    "82": {
+      "name": "Large type of bush",
+      "desc": "Large type of bush."
+    },
+    "83": {
+      "name": "Mid-sized type of bush",
+      "desc": "Mid-sized type of bush."
+    },
+    "84": {
+      "name": "Castle entrance",
+      "desc": "Castle entrance."
+    },
+    "85": {
+      "name": "Yoshi's house",
+      "desc": "Yoshi's house."
+    },
+    "86": {
+      "name": "Goal arrow sign",
+      "desc": "Goal arrow sign."
+    },
+    "87": {
+      "name": "Green switch block",
+      "desc": "Green switch block."
+    },
+    "88": {
+      "name": "Tree branch facing left",
+      "desc": "Tree branch facing left."
+    },
+    "89": {
+      "name": "Tree branch facing right",
+      "desc": "Tree branch facing right."
+    },
+    "8A": {
+      "name": "Green switch palace switch",
+      "desc": "Green switch palace switch."
+    },
+    "8B": {
+      "name": "Yellow switch palace switch",
+      "desc": "Yellow switch palace switch."
+    },
+    "8C": {
+      "name": "Blue switch palace switch",
+      "desc": "Blue switch palace switch."
+    },
+    "8D": {
+      "name": "Red switch palace switch",
+      "desc": "Red switch palace switch."
+    },
+    "8E": {
+      "name": "Yellow switch block",
+      "desc": "Yellow switch block."
+    },
+    "8F": {
+      "name": "Ghost house window",
+      "desc": "Ghost house window."
+    },
+    "90": {
+      "name": "Boss enemy door",
+      "desc": "Boss enemy door."
+    },
+    "91": {
+      "name": "Steep left slope",
+      "desc": "Steep left slope."
+    },
+    "92": {
+      "name": "Steep right slope",
+      "desc": "Steep right slope."
+    },
+    "93": {
+      "name": "Steep normal left slope",
+      "desc": "Steep normal left slope."
+    },
+    "94": {
+      "name": "Steep normal right slope",
+      "desc": "Steep normal right slope."
+    },
+    "95": {
+      "name": "Very steep left slope",
+      "desc": "Very steep left slope."
+    },
+    "96": {
+      "name": "Very steep right slope",
+      "desc": "Very steep right slope."
+    },
+    "97": {
+      "name": "Switch palace right and bottom edge tile",
+      "desc": "Switch palace right and bottom edge tile."
+    }
+  }
+}

@@ -1,0 +1,29 @@
+[workspace]
+resolver = "2"
+members = ["crates/wdc65816", "crates/smw-core", "crates/smw-play", "app/src-tauri"]
+
+[profile.dev]
+# Full debug info made target/ ~8 GB; line tables are enough for panic backtraces
+debug = "line-tables-only"
+
+[profile.dev.package."*"]
+opt-level = 2
+debug = false
+
+[profile.dev.package.wdc65816]
+opt-level = 3
+
+# The emulator-driven level loader/renderer runs on every edit; keep it fast in dev builds too
+[profile.dev.package.smw-core]
+opt-level = 3
+
+# Converts and streams 60 frames + sound per second while playing
+[profile.dev.package.smw-play]
+opt-level = 3
+
+[profile.release]
+codegen-units = 1
+lto = true
+opt-level = 3
+panic = "abort"
+strip = true
