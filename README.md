@@ -1,13 +1,19 @@
 # SMW Studio
 
-A modern, all-in-one Super Mario World editor: a friendly, pro-style successor to Lunar Magic.
+A modern, all-in-one editor for Super Mario World hacks. **Alpha.**
 
-- Desktop app for Windows, macOS and Linux (Tauri), plus a web version that runs in the browser.
-- Opens and edits everything: levels, overworld, title screen, graphics, palettes, Map16, sprites, music, text.
-- Patching built in (Asar, PIXI, GPS, UberASM, AddmusicK): no separate tools.
-- Asset library: save blocks, sprites, backgrounds and songs (from any ROM or hack) as reusable parts and pin them to your toolbar.
-- MIDI import to SNES music.
+**Website:** https://antonretro.github.io/smw-studio/ · **Download:** [Releases](https://github.com/antonretro/smw-studio/releases)
+
+What works now (Windows):
+
+- Level editing, drawn by running the game's own code (Lunar Magic and SA-1 hacks included).
+- Play any level straight from the editor, with test cheats.
+- Music: MIDI to song, AddmusicK insertion, original vs custom song detection, play any song.
+- Patches (Asar) and per-frame code (UberASM) switched on and off, with exact undo and safety checks.
+- Status bar designer, Toolbox packs, taking levels and songs from other hacks, overworld view.
 - Saves in Lunar Magic's ROM format, so hacks open in both editors.
+
+Not yet: overworld editing, Map16 and graphics editors, custom sprites/blocks (PIXI, GPS), macOS/Linux, a browser version. Some jobs still use your own installed copy of Lunar Magic. You need your own copy of Super Mario World (USA).
 
 ## Guide
 
